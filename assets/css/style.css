@@ -1,10 +1,7 @@
 body {
-    background-color: rgb(255, 255, 255);
-    padding: 0;
-    margin: 0;
-    
+    background: linear-gradient(to right, #ff5f6d, #ffc371); /* Farbverlauf von links nach rechts */
+    /* Alternative: background: linear-gradient(135deg, #ff5f6d, #ffc371); für eine diagonale Richtung */
 }
-
 h1 {
     text-align: center;
     color: red;
