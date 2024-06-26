@@ -1,8 +1,8 @@
+
+
 function blau(){
     window.location.href = "Unterseiten/r6 leon fertig/r6 new.html";
 }
-
-
 
 document.addEventListener('DOMContentLoaded', function() {
     const events = document.querySelectorAll('.timeline-event');
@@ -23,3 +23,12 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(event);
     });
 });
+
+
+function profil(){
+    window.location.href = "Unterseiten/Profil website/Untitled-1.html";
+}
+
+function Projekte(){
+    window.location.href = "Unterseiten/projekte/Untitled-1.html";
+}
