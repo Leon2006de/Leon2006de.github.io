@@ -1,0 +1,127 @@
+                
+body {
+    background-color: gray;
+        margin: 0;
+     }
+    
+    h1 {
+        font-family: ': Georgia';
+        color: white;
+    margin-left: 5%;
+    margin-bottom: 0%;
+    margin-top: 1%;
+    font-size: 400%;
+    }
+    h1 a {
+        margin: 2%;
+    }
+    
+    h2{
+    
+        text-align: center;
+        font-size: 100%;
+        margin-top: 30%;
+        margin-right: 100%;
+    }
+    
+    h3{
+    
+    width: 100%;
+    height: 50%;
+    color: white;
+    font-size: 200%;
+    text-align: center;
+    
+    }
+    h4 {
+    width: 100%;
+    height: 50%;
+    font-size: 150%;
+    color: white;
+    font-size: 100%;
+    text-align: center;
+    position: relative;
+    }
+    
+    h5 {
+    text-align: center;
+    font-size: 150%;
+    margin-bottom: 20%;
+    margin-top: 33%;
+    position: relative;
+    }
+    
+    h6 {
+    text-align: center;
+    font-size: 150%;
+    margin-left: 45%;
+    
+    }
+    
+    
+    
+    .reihe{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-area: auto;
+    position: absolute;
+    margin-top: 3%;
+    }
+    
+    .text {
+    
+        width: 100%;
+        height: 20%;
+        color: white;
+        font-size: 100%;
+        text-align: center;
+    
+    
+    }
+    
+    
+    .waffen {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        margin-top: 3%;
+        margin: 2%;
+        width: 90%;
+    }
+    .waffen img {
+        width: 250px;
+        position: relative;
+    }
+    .waffen h2{
+    margin-left: 25%;
+    margin-top: 40%;
+    }
+    
+    
+    hr {
+       width: 100%;
+    }
+    
+    a {
+    font-family: ': Georgia';
+    color: white;
+    text-decoration: none;
+    float: inline-end;
+    font-size: large;
+    
+    }
+    
+      a:hover {
+        background-color: rgb(39, 39, 46);
+        color: white;
+        text-decoration: none;
+        
+    }
+    .try{
+        background-color: black;
+    }
+    .bild{
+        margin-left: 20%;
+        position: relative;
+        
+    }
+
