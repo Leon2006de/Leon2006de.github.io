@@ -1,8 +1,5 @@
 
 
-function blau(){
-    window.location.href = "Unterseiten/r6 leon fertig/r6 new.html";
-}
 
 document.addEventListener('DOMContentLoaded', function() {
     const events = document.querySelectorAll('.timeline-event');
