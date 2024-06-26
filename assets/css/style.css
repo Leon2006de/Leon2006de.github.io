@@ -17,11 +17,11 @@ body {
     align-items: center;
     overflow-x: hidden;
     position: relative;
-    background-image: url("assets/img/backround.png");
+    background-image: url('img/backround.png');
     background-size: cover;
     background-repeat: no-repeat;
+    text-rendering: optimizeLegibility;
 }
-
 
 .headline {
     font-size: 1.5rem;
@@ -71,9 +71,9 @@ body {
     color: #44607b;
 }
 
-
 .container {
     display: flex;
+    flex-direction: row;
     width: 100%;
     height: 70vh;
     justify-content: space-between;
@@ -119,11 +119,17 @@ body {
     font-size: 1.2rem;
 }
 
+.rightBox1 img {
+    width: 40%;
+    height: auto;
+    border-radius: 5%;
+}
+
 /* Second container styles */
 .container2 {
     display: flex;
     width: 100%;
-    height: 70vh;
+    height: 30vh;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -179,7 +185,6 @@ body {
     border: 1px solid #ccc;
 }
 
-
 .timeline {
     position: relative;
     max-width: 600px;
@@ -207,6 +212,7 @@ body {
 .timeline-content {
     padding: 20px;
     background-color: white;
+    color: black;
     position: relative;
     border-radius: 6px;
     width: 45%;
@@ -237,9 +243,90 @@ body {
     left: 55%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .whiteBox {
+        width: 90%;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .leftBox1, .rightBox1 {
+        width: 100%;
+    }
+
+    .leftBox1 h1 {
+        font-size: 4rem;
+    }
+
+    .leftBox1 h2, .rightBox1 h2 {
+        font-size: 1.75rem;
+    }
+
+    .leftBox1 p, .rightBox1 p {
+        font-size: 1rem;
+    }
+
+    .rightBox1 img {
+        width: 70%;
+        height: auto;
+    }
+
+    .headline {
+        flex-direction: column;
+        height: auto;
+        padding: 0.5rem;
+    }
+
+    .headlineleft, .headlineright {
+        font-size: 1.25rem;
+        margin: 0.5rem 0;
+    }
+
+    .headlinebuttons {
+        gap: 0.5rem;
+    }
+
+    .headline button {
+        font-size: 0.875rem;
+        padding: 0.25rem 0.5rem;
+    }
+
+    .container2 {
+        flex-direction: column;
+        height: auto;
+    }
+
     .timeline-content {
         width: 90%;
         left: 5% !important;
     }
+}
+
+@media screen and (max-width: 768px) {
+    .leftBox1 h1 {
+        font-size: 3rem;
+    }
+
+    .leftBox1 h2, .rightBox1 h2 {
+        font-size: 1.5rem;
+    }
+
+    .leftBox1 p, .rightBox1 p {
+        font-size: 0.875rem;
+    }
+}
+.timeline-event {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease-in-out;
+}
+
+.timeline-event.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
