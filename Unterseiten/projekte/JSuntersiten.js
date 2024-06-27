@@ -10,7 +10,7 @@ function drei(){
 }
 
 function vier(){
-    window.location.href = "Unterseiten/r6 leon fertig/r6 new.html";
+    window.location.href = "Einzelne Projekte/Hangman Game/test.html";
 }
 
 function fünf(){
