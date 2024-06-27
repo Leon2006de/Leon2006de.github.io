@@ -29,3 +29,10 @@ function profil(){
 function Projekte(){
     window.location.href = "Unterseiten/projekte/Untitled-1.html";
 }
+
+
+
+
+
+
+
