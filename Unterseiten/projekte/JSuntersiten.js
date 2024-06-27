@@ -1,12 +1,12 @@
 function eins(){
-    window.location.href = "r6 new - Verknüpfung.lnk";
+    window.location.href = "Einzelne Projekte/r6 leon fertig/r6 new.html";
 }
 function zwei(){
-    window.location.href = "Unterseiten/r6 leon fertig/r6 new.html";
+    window.location.href = "Einzelne Projekte/rechner/apple rechner number 2.html";
 }
 
 function drei(){
-    window.location.href = "Unterseiten/r6 leon fertig/r6 new.html";
+    window.location.href = "Einzelne Projekte/Autorennen/Untitled-1.html";
 }
 
 function vier(){
@@ -18,8 +18,9 @@ function fünf(){
 }
 
 
+
 document.addEventListener('DOMContentLoaded', function() {
-    const events = document.querySelectorAll('.box-event');
+    const events = document.querySelectorAll('.box');
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -37,5 +38,3 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(event);
     });
 });
-
-

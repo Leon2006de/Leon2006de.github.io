@@ -94,6 +94,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    
 }
 
 .leftBox1, .rightBox1 {
@@ -106,7 +107,7 @@ body {
 }
 
 .leftBox1 h1 {
-    font-size: 5.5rem;
+    font-size: 3rem;
 }
 
 .leftBox1 h2, .rightBox1 h2 {

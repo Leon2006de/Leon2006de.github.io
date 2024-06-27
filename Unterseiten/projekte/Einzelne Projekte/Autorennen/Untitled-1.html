@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formel 1</title>
+    <style>
+        .Strasse {
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <img src="img/rennwagen.png" alt="">
+    <button onclick="history.back()">Zurück zur Webseite</button>
+    <center><h1>Punktestand</h1></center>
+    <center>
+        <span id="rot" style="color: red; font-size: 60px;">0</span> zu
+        <span id="blau" style="color: blue; font-size: 60px;">0</span>
+    </center>
+
+    <div class="Strasse">
+        <img id="Wagen1" src="img/rennwagen1.png" style="position: relative;" alt=""><br><br>
+        <img id="Wagen2" src="img/rennwagen2.png" style="position: relative;" alt="">
+    </div>
+
+    <p id="P"></p>
+
+    <script>
+        window.addEventListener("keyup", fahren, true);
+
+        let speed = 30;
+        let wagen1 = 0;
+        let wagen2 = 0;
+        let tracker1 = document.getElementById("Wagen1");
+        let tracker2 = document.getElementById("Wagen2");
+        let countWagen1 = 0;
+        let countWagen2 = 0;
+
+        function fahren(taste) {
+            if (taste.keyCode == 65) {
+                wagen1 += speed;
+                tracker1.style.left = wagen1 + "px";
+                countWagen1++;
+            }
+
+            if (taste.keyCode == 76) {
+                wagen2 += speed;
+                tracker2.style.left = wagen2 + "px";
+                countWagen2++;
+            }
+
+            if (countWagen1 >= 50) {
+                gewonne1();
+            }
+            if (countWagen2 >= 50) {
+                gewonne2();
+            }
+
+            if (countWagen1 >= 50 && countWagen2 >= 50) {
+                reset();
+            }
+        }
+
+        function gewonne1() {
+            let rot = parseFloat(document.getElementById("rot").innerHTML);
+            document.getElementById("P").innerHTML = "Rot hat gewonnen";
+            document.getElementById("rot").innerHTML = rot+ 1;
+            reset();
+        }
+
+        function gewonne2() {
+            let blau = parseFloat(document.getElementById("blau").innerHTML);
+            document.getElementById("P").innerHTML = "Blau hat gewonnen";
+            document.getElementById("blau").innerHTML = blau+ 1;
+            reset();
+        }
+
+        function reset() {
+            wagen1 = 0;
+            wagen2 = 0;
+            countWagen1 = 0;
+            countWagen2 = 0;
+        }
+
+ 
+
+
+        function gameLoop() {
+            fahren();
+            requestAnimationFrame(gameLoop);
+        }
+
+        gameLoop();
+    </script>
+
+   
+</body>
+</html>
