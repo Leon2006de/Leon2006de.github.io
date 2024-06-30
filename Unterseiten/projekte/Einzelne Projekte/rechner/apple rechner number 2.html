@@ -1,0 +1,147 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Rechner</title>
+    <link rel="icon" href="origami.png" type="image/x-icon">
+
+<style>
+  input, button {
+    width: 19%;
+    height:13%;
+    margin: 3%; 
+    border-radius: 50%;
+    font-size: 250%;
+    background-color: rgb(41, 57, 57);
+    color: white;
+    border: none;
+
+}
+.back {
+    height: auto;
+    width: 35%;
+    background-color: black;
+ 
+}
+.back2 {
+    height: auto;
+    width: auto;
+    background-color: black;
+ 
+}
+input[type="Text"] {
+    background-color: black;
+    color: white;
+    box-shadow: none;
+    text-shadow:none ;
+    border-radius: 0%;
+  
+    width: 94%;
+    height: 15%;
+    font-size: 300%;
+  
+  
+}
+
+
+
+.grau input {
+  background-color: lightgray;
+  color: black;
+}
+.orange input[type="button"] {
+  background-color: orange;
+  color: black;}
+
+
+  .null  input[type="button"]
+  {
+    width: 200%;
+  }
+</style>
+</head>
+<body>
+    
+
+
+    <script>
+function appendToDisplay(value) {
+      document.getElementById("display").value += value;
+    }
+
+    function calculateResult() {
+      try {
+        document.getElementById("display").value = eval(document.getElementById("display").value);
+      } catch (error) {
+        document.getElementById("display").value = "Error";
+      }
+      
+    }
+
+    function clearDisplay() {
+      document.getElementById("display").value = "";
+    }
+   
+     let currentNumber = "";
+
+
+
+function changeSign() {
+    if (currentNumber != null) {
+        currentNumber = (parseFloat(currentNumber) * -1) ;
+        document.getElementById("Display").value = currentNumber;
+    }
+
+  }
+
+
+  
+
+
+    </script>
+
+    
+
+<button onclick="history.back()">Zurück zur Webseite</button>
+
+
+
+
+<div class="back">
+  <td><input type="text" id="display" disabled> </td>
+<table>
+  
+
+<tr>
+
+<input style="color:black; background-color: lightgray;" type="button"  value="AC" onclick="clearDisplay()">
+  <input style="color:black; background-color: lightgray;  border-color:lightgray;" type="button" value="+/-" onclick="changeSign('')">
+    <input style="color:black; background-color: lightgray ; border-color:lightgray;" type="button" value="%" onclick="appendToDisplay('%')">
+     <input style="color:white; background-color: orange; border-color: orange;" type="button" value="÷" onclick="appendToDisplay('/')"><br>
+       <input type="button" value="7" onclick="appendToDisplay('7')">
+         <input type="button" value="8" onclick="appendToDisplay('8')">
+           <input type="button" value="9" onclick="appendToDisplay('9')"> 
+           <input style="color:white; background-color: orange; border-color: orange;" type="button" value="*" onclick="appendToDisplay('*')"><br>
+           <input  type="button" value="4" onclick="appendToDisplay('4')">
+           <input type="button" value="5" onclick="appendToDisplay('5')">
+           <input type="button" value="6" onclick="appendToDisplay('6')">
+           <input style="color:white; background-color: orange; border-color: orange;" type="button" value="-" onclick="appendToDisplay('-')"> <br>
+           <input type="button" value="1" onclick="appendToDisplay('1')">
+           <input type="button" value="2" onclick="appendToDisplay('2')">
+           <input type="button" value="3" onclick="appendToDisplay('3')">
+          <input style="color:white; background-color: orange; border-color: orange;" type="button" value="+" onclick="appendToDisplay('+')"> <br>
+        <input style="width: 44%; border-radius: 40%;" type="button" value="0" onclick="appendToDisplay('0')"> 
+    <input type="button" value="," onclick="appendToDisplay(',')">
+<input style="color:white; background-color: orange; border-color: orange;" type="button" value="=" onclick="calculateResult()">
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+

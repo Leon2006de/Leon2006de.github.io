@@ -1,0 +1,422 @@
+
+
+
+h1 {
+ 
+    color: white;
+ 
+    font-family: arial;
+ 
+}
+h3 {
+    color: white;
+    margin-left: 100%;
+    text-decoration: none;
+
+}
+h5{
+    opacity: 100%;
+    color: white;
+    font-family: arial;
+    font-size: 20px;
+    opacity: 100%;
+
+
+}
+ 
+body {
+ 
+ 
+ 
+    margin: 0;
+ 
+    padding: 0;
+ 
+    font-family: 'Times New Roman', Times, serif;
+ 
+   display:flex;
+ 
+   flex-direction: column;
+ 
+ 
+ 
+   }
+ 
+ 
+ 
+.hintergrund{
+ 
+ 
+ 
+    background-image: linear-gradient(to top, white 0%, grey 100%);
+ 
+    height: 100%;
+ 
+    width: 100%;
+ 
+    display: flex;
+ 
+}
+
+
+
+.hintergrund iframe{
+    width: 50%;
+    height: 50%; 
+    border-radius: 3%;
+    margin-top: 12.5%;
+    margin-right: 5%  ;
+}
+
+
+.box {
+    background-color: rgb(70, 69, 67);
+    color: rgb(0, 0, 0);
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 15%;
+    margin-top: 5%;
+    border-radius: 8%;
+    padding: 20px;
+    display: block;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    width: 50%;
+
+
+}
+.hintergrund2{
+ 
+   
+ 
+    background-image: url("img/gut.jfif");
+ 
+    background-repeat: no-repeat;
+ 
+    background-size:auto;
+ 
+    height: 100%;
+ 
+    width: 100%;
+ 
+    display: flex;
+ 
+}
+
+
+.hintergrund3 {
+    background-image: url("img/richtig.jfif");
+
+    background-repeat: no-repeat;
+ 
+    background-size:cover;
+ 
+    height: 100%;
+ 
+    width: 100%;
+ 
+    display: flex;
+
+}
+.hintergrund4 {
+  
+
+ 
+    height: 100%;
+ 
+    width: 100%;
+ 
+    display: flex;
+    
+    background-color: rgb(54, 53, 53);
+}
+.hintergrund5 {
+
+        background-image: url("img/esports.jfif");
+     
+        background-repeat: no-repeat;
+     
+        background-size:cover;
+     
+        height: 100%;
+     
+        width: 100%;
+     
+        display: flex;
+    }
+
+
+  
+.Logo{
+ 
+  margin-left: 40%;
+ 
+    background-image: url("img/logo.webp");
+ 
+    background-repeat: no-repeat;
+ 
+    background-size:cover;
+    
+    height: 100%;
+ 
+    width: 17%;
+ 
+    display: flex;
+ 
+}
+ 
+
+
+
+
+.übergang {
+ 
+  
+    display: flex;
+ 
+    border-color: white;
+ 
+ 
+    background-color: black;
+ 
+    width: 100%;
+ 
+    height: 9%;
+    
+ 
+}
+ 
+.übergang  li a {
+    display: flex;
+    text-align: left;
+    color: aliceblue;
+    list-style: none;
+    text-decoration: none;
+    opacity: 100%;    
+   font-size: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+ 
+ 
+}
+
+
+.übergang  li a:hover {
+    background-color: rgb(39, 39, 46);
+    opacity: 100%;
+    color: white;
+    text-decoration: none;
+ 
+
+}
+
+
+ 
+ 
+.navbar {
+ 
+    display: flex;
+ 
+    background-color: black;
+ 
+    width: 100%;
+ 
+    height: 9%;
+ 
+ 
+ 
+   
+ 
+}
+.navbar li a {
+    display: flex;
+    text-align: left;
+    color: aliceblue;
+    list-style: none;
+    text-decoration: none;
+    opacity: 100%;    
+   font-size: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+ 
+ 
+}
+
+
+.navbar  li a:hover {
+    background-color: rgb(39, 39, 46);
+    opacity: 100%;
+    color: white;
+    text-decoration: none;
+ 
+
+}
+
+
+
+.flex-box {
+display: grid;
+grid-template-columns: repeat(10,1fr);
+margin-bottom: 100%;
+margin-right: 10%;
+margin-left: 1%;
+
+
+}
+
+.flex-box img {
+width: 100%;
+flex-wrap: wrap
+}
+
+.flex-box img:hover {
+width: 80%;
+}
+.hintergrund2  li{
+    display: block;
+    text-align: left;
+    color: aliceblue;
+    list-style: none;
+    text-decoration: none;
+    opacity: 100%;    
+    font-size: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+ 
+ 
+}
+.flex-box2 {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-bottom: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: black;
+    
+    }
+    
+    .flex-box2 img {
+      
+    width: 100%;
+    flex-wrap: wrap
+    }
+    
+    .hintergrund3  li{
+        display: block;
+        text-align: left;
+        color: aliceblue;
+        list-style: none;
+        text-decoration: none;
+        opacity: 100%;    
+        font-size: 30px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    
+    .hintergrund4 img {
+        margin: 3%;
+    }
+ 
+
+    .hintergrund4 a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+       padding-left: 3%;
+       text-align: center;
+    }
+    .hintergrund4 h1 {
+        text-align: center;
+        width: 100%;
+    }
+    .back {
+        text-align: center;
+        width: 100%;
+        height: 40%;
+        background-color: rgb(70, 69, 67);
+        margin: 2%;
+        font-size: 10px;
+        font-weight: bold;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        border-radius: 5%;
+    }
+
+    .back2 {
+        text-align: center;
+        width: 410%;
+        height: auto;
+        background-color: rgb(70, 69, 67);
+        margin: 2%;
+        font-size: 10px;
+        font-weight: bold;
+        border-radius: 5%;
+        height: 40%;
+    }
+
+
+
+    .footer{
+        display: flex;
+        border-color: white;
+        background-color: black;
+        width: 100%;
+        height: auto;
+    }
+    
+    .footer li a{
+        display: flex;
+        text-align: left;
+        color: aliceblue;
+        list-style: none;
+        text-decoration: none;
+        opacity: 100%;    
+       font-size: 30px;
+        padding-right: 15px;
+        padding-left: 15px;
+     
+     
+        
+    }
+
+    
+    .footer img {
+  
+        height: 5%;
+        width: 11%;
+        height: auto;
+    }
+
+  .l{
+width: 45%;
+
+  }
+
+  .r{
+width: 45%;
+color: white;
+  }
+  .i{
+    background-color: black;
+    width: 100%;
+    height: auto;
+  }
+  
+
+  .flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }

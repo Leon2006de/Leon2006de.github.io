@@ -1,0 +1,117 @@
+/* Body */
+body {
+    background-color: #f0f0f0; /* Hellere Hintergrundfarbe */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Headline */
+.headline {
+    width: 100%;
+    background-color: #44607b;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headline-left {
+    display: flex;
+    align-items: center;
+}
+
+.headline-left img {
+    width: 40px; /* Beispielhafte Größe für das Bild */
+    height: auto; /* Automatische Höhe */
+    margin-right: 10px; /* Abstand zum Text */
+}
+
+.headline-left h1 {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.headline-right button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-right: 40px; /* Reduzierter Abstand */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.headline-right button:hover {
+    background-color: white;
+    color: #44607b;
+}
+
+/* Box */
+.box {
+    width: 90%;
+    min-width: 300px; /* Mindestbreite für kleinere Bildschirme */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Abstand zwischen linkem und rechtem Inhalt */
+    align-items: flex-start; /* Oben ausrichten */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 120px auto 20px; /* Oben mehr Platz für die Headline */
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.leftBox, .rightBox {
+    width: 45%; /* Gleiche Breite für linke und rechte Box */
+    padding: 3%; /* Innenabstand für den Inhalt */
+    box-sizing: border-box;
+}
+
+.leftBox {
+    border-right: 1px solid #ccc; /* Trennlinie zwischen den Boxen */
+}
+
+/* Buttons */
+.box button {
+    background-color: #44607b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px; /* Abstand nach oben */
+}
+
+.box button:hover {
+    background-color: #335066;
+    transform: scale(1.05);
+}
+
+/* Text-Stile */
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #72767a;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    position: relative;
+    background-image: url('backround.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 40vh;
+    justify-content: space-between;
+    padding-top: 1rem;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    font-family: monospace;
+    font-size: large;
+
+    text-rendering: optimizeLegibility;
+ 
+
+    
+}
+
+.box {
+    width: 45%;
+    height: 25vh; /* Increased height */
+    background-color: rgba(173, 200, 208, 0.8);
+    border-radius: 5%;
+    color: black;
+    text-align: center;
+    margin-top: 3%;
+    align-items: center;
+    align-content: center;
+}
+.box button {
+    margin-top: 4%;
+    background-color: rgba(154, 189, 200, 0.8); /* Green background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 10px 20px; /* Some padding */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Increase font size */
+    cursor: pointer; /* Pointer/hand icon on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for background-color */
+}
+
+.box button:hover {
+    background-color: #6d707d60; /* Darker green on hover */
+}
+
+
+.box-event {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease-in-out;
+}
+
+
+ button {
+    background-color: #44607b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px; /* Abstand nach oben */
+  
+}
+
+ button:hover {
+    background-color: #335066;
+    transform: scale(1.05);
+}
