@@ -1,3 +1,3 @@
-function showtest() {
-	alert("Test 1");
+function test(){
+	alert("dasiovb");
 }
