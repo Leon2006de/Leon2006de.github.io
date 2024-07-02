@@ -1,0 +1,101 @@
+body {
+    background-color: #44607b;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.headline {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    padding: 0 15px;
+    position: fixed;
+    background-color: lightblue;
+}
+
+.headlineleft {
+    font-size: 28px;
+    margin: 20px;
+}
+
+.headlineright {
+    font-size: 12px;
+}
+
+.headlinebuttons {
+    margin: 0 10px 0 0;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.headline button {
+    background-color: transparent;
+    border: none;
+    padding: 8px 15px;
+    font-size: 17px;
+    cursor: pointer;
+    color: white;
+}
+
+.headline button:hover {
+    background-color: lightblue;
+    color: black;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    justify-content: space-between;
+}
+
+.leftBox, .rightBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+}
+
+.leftBox h1, .rightBox h1, .leftBox p, .rightBox p {
+    margin: 0;
+    text-align: center;
+    align-items: center;
+}
+
+.container2 {
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    justify-content: space-between;
+}
+
+
+
+.blue-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.blue-button:hover {
+    background-color: #0056b3;
+}
