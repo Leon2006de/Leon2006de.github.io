@@ -10,7 +10,7 @@ function drei(){
 }
 
 function vier(){
-    window.location.href = "Einzelne Projekte/Hangman Game/test.html";
+    window.location.href = "Einzelne Projekte/Hangman Game/HangmanGame.html";
 }
 
 function fünf(){
