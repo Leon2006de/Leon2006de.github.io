@@ -16,8 +16,8 @@
     <button onclick="history.back()">Zurück zur Webseite</button>
     <center><h1>Punktestand</h1></center>
     <center>
-        <span id="rot" style="color: red; font-size: 60px;">0</span> zu
-        <span id="blau" style="color: blue; font-size: 60px;">0</span>
+        <span id="rot" style="color: red; font-size: 81px;">0</span> zu
+        <span id="blau" style="color: blue; font-size: 81px;">0</span>
     </center>
 
     <div class="Strasse">
@@ -51,14 +51,14 @@
                 countWagen2++;
             }
 
-            if (countWagen1 >= 50) {
+            if (countWagen1 >= 81) {
                 gewonne1();
             }
-            if (countWagen2 >= 50) {
+            if (countWagen2 >= 81) {
                 gewonne2();
             }
 
-            if (countWagen1 >= 50 && countWagen2 >= 50) {
+            if (countWagen1 >= 81 && countWagen2 >= 81) {
                 reset();
             }
         }
