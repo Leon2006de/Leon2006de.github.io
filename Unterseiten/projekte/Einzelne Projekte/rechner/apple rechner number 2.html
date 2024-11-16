@@ -6,7 +6,6 @@
     <title>Apple Rechner</title>
     <link rel="icon" href="origami.png" type="image/x-icon">
     <style>
-        /* Allgemeine Stile */
         body {
             font-family: Arial, sans-serif;
             background-color: black;
@@ -14,12 +13,39 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin: 0;
-            padding: 0;
+        }
+
+        input, button {
+            width: 19%;
+            height: 13%;
+            margin: 3%;
+            border-radius: 50%;
+            font-size: 250%;
+            background-color: rgb(41, 57, 57);
+            color: white;
+            border: none;
+        }
+
+        .back {
+            height: auto;
+            width: 35%;
+            background-color: black;
+        }
+
+        input[type="text"] {
+            background-color: black;
+            color: white;
+            box-shadow: none;
+            text-shadow: none;
+            border-radius: 0%;
+            width: 94%;
+            height: 15%;
+            font-size: 300%;
         }
 
         button {
-            margin: 20px;
+            margin-top: 20px;
+            width: auto;
             padding: 10px 20px;
             border-radius: 5px;
             font-size: 18px;
@@ -27,7 +53,6 @@
             color: white;
             border: 1px solid white;
             cursor: pointer;
-            transition: background-color 0.3s, color 0.3s;
         }
 
         button:hover {
@@ -35,98 +60,49 @@
             color: black;
         }
 
-        /* Rechner-Container */
-        .calculator {
-            width: 35%;
-            background-color: black;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 10px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-        }
-
-        /* Display-Stil */
-        #display {
-            width: 94%;
-            height: 50px;
-            font-size: 1.5rem;
-            text-align: right;
-            background-color: black;
-            color: white;
-            border: none;
-            margin-bottom: 20px;
-        }
-
-        /* Allgemeine Tasten-Stile */
-        .buttons {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
-            width: 100%;
-        }
-
-        .buttons input {
-            height: 70px;
-            font-size: 1.5rem;
-            border: none;
-            border-radius: 50%;
-            background-color: rgb(41, 57, 57);
-            color: white;
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.2s;
-        }
-
-        .buttons input:hover {
-            background-color: rgba(255, 255, 255, 0.1);
-            transform: scale(1.1);
-        }
-
-        /* Spezielle Farben */
-        .buttons .light-gray {
+        .grau input {
             background-color: lightgray;
             color: black;
         }
 
-        .buttons .orange {
+        .orange input[type="button"] {
             background-color: orange;
             color: black;
         }
 
-        /* Die Null-Taste */
-        .buttons .zero {
-            grid-column: span 2;
-            border-radius: 50px;
+        .null input[type="button"] {
+            width: 200%;
         }
     </style>
 </head>
 <body>
     <button onclick="history.back()">Zurück zur Webseite</button>
 
-    <div class="calculator">
-        <input type="text" id="display" disabled>
-        <div class="buttons">
-            <input class="light-gray" type="button" value="AC" onclick="clearDisplay()">
-            <input class="light-gray" type="button" value="+/-" onclick="changeSign()">
-            <input class="light-gray" type="button" value="%" onclick="appendToDisplay('%')">
-            <input class="orange" type="button" value="÷" onclick="appendToDisplay('/')">
-            <input type="button" value="7" onclick="appendToDisplay('7')">
-            <input type="button" value="8" onclick="appendToDisplay('8')">
-            <input type="button" value="9" onclick="appendToDisplay('9')">
-            <input class="orange" type="button" value="*" onclick="appendToDisplay('*')">
-            <input type="button" value="4" onclick="appendToDisplay('4')">
-            <input type="button" value="5" onclick="appendToDisplay('5')">
-            <input type="button" value="6" onclick="appendToDisplay('6')">
-            <input class="orange" type="button" value="-" onclick="appendToDisplay('-')">
-            <input type="button" value="1" onclick="appendToDisplay('1')">
-            <input type="button" value="2" onclick="appendToDisplay('2')">
-            <input type="button" value="3" onclick="appendToDisplay('3')">
-            <input class="orange" type="button" value="+" onclick="appendToDisplay('+')">
-            <input class="zero" type="button" value="0" onclick="appendToDisplay('0')">
-            <input type="button" value="." onclick="appendToDisplay('.')">
-            <input class="orange" type="button" value="=" onclick="calculateResult()">
-        </div>
+    <div class="back">
+        <td><input type="text" id="display" disabled></td>
+        <table>
+            <tr>
+                <input style="color:black; background-color: lightgray;" type="button" value="AC" onclick="clearDisplay()">
+                <input style="color:black; background-color: lightgray;  border-color:lightgray;" type="button" value="+/-" onclick="changeSign()">
+                <input style="color:black; background-color: lightgray ; border-color:lightgray;" type="button" value="%" onclick="appendToDisplay('%')">
+                <input style="color:white; background-color: orange; border-color: orange;" type="button" value="÷" onclick="appendToDisplay('/')"><br>
+                <input type="button" value="7" onclick="appendToDisplay('7')">
+                <input type="button" value="8" onclick="appendToDisplay('8')">
+                <input type="button" value="9" onclick="appendToDisplay('9')">
+                <input style="color:white; background-color: orange; border-color: orange;" type="button" value="*" onclick="appendToDisplay('*')"><br>
+                <input type="button" value="4" onclick="appendToDisplay('4')">
+                <input type="button" value="5" onclick="appendToDisplay('5')">
+                <input type="button" value="6" onclick="appendToDisplay('6')">
+                <input style="color:white; background-color: orange; border-color: orange;" type="button" value="-" onclick="appendToDisplay('-')"><br>
+                <input type="button" value="1" onclick="appendToDisplay('1')">
+                <input type="button" value="2" onclick="appendToDisplay('2')">
+                <input type="button" value="3" onclick="appendToDisplay('3')">
+                <input style="color:white; background-color: orange; border-color: orange;" type="button" value="+" onclick="appendToDisplay('+')"><br>
+                <input style="width: 44%; border-radius: 40%;" type="button" value="0" onclick="appendToDisplay('0')">
+                <input type="button" value="." onclick="appendToDisplay('.')">
+                <input style="color:white; background-color: orange; border-color: orange;" type="button" value="=" onclick="calculateResult()">
+            </tr>
+        </table>
     </div>
 
     <script>
@@ -136,8 +112,7 @@
 
         function calculateResult() {
             try {
-                let expression = document.getElementById("display").value;
-                document.getElementById("display").value = eval(expression.replace(",", "."));
+                document.getElementById("display").value = eval(document.getElementById("display").value.replace(",", "."));
             } catch (error) {
                 document.getElementById("display").value = "Error";
             }
